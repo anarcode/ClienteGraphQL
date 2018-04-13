@@ -1,0 +1,13 @@
+div[contenedor]{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  color: #fff;
+  background-color: orange;
+}
+
+span{
+  cursor: pointer;
+  margin: 0 1em;
+}

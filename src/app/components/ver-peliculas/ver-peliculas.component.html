@@ -1,0 +1,9 @@
+<div boton (click)="ObtenerDatos()">Refrescar a las pinículas</div>
+<div *ngFor="let pelicula of Peliculas | async">
+  <div pelicula>
+      {{pelicula.nombre}}
+  </div>
+</div>
+<br />
+Nueva película <input type="text" [(ngModel)]="NombreDePeliculaNueva" placeholder="Nombre de película" />
+<div boton (click)="Nueva()">Dar de alta</div>

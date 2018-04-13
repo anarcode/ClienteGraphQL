@@ -1,0 +1,11 @@
+<div movibles dnd-droppable (onDropSuccess)="Desmover($event)" [dropZones]="['movibles']">
+  <div drg dnd-draggable *ngFor="let movible of movibles" [dragData]="movible" [dropZones]="['movidos']">
+    {{movible.texto}}
+  </div>
+</div>
+<div movidos>
+  <h1>Muévelo aquí</h1>
+  <div drp dnd-droppable (onDropSuccess)="Mover($event)" [dropZones]="['movidos']">
+      <div dnd-draggable drp-element *ngFor="let movido of movidos" [dragData]="movido" [dropZones]="['movibles']">{{movido.texto}}</div>
+  </div>
+</div>

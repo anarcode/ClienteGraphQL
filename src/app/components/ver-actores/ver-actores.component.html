@@ -1,0 +1,4 @@
+<div boton (click)="ObtenerDatos()">Refrescar a los actores</div>
+<div *ngFor="let actor of Actores | async">
+  {{actor.nombre}}
+</div>
